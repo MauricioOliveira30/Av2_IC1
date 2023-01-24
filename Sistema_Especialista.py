@@ -1,3 +1,9 @@
+print("Escolha essas Categorias Ação, Comédia, Romance, Terror, Ficção cientifica,Aventura,Novela, Fantasia")
+
+categoria=str(input('Digite a sua  categoria:'))
+
+origem=str(input('Digite sua origem:'))
+lancamento=int(input('Digite o ano do lançamento:'))
 def consulta(categoria, lancamento, origem):
     categoria = categoria if categoria in ['Ação', 'Comedia', 'Romance', 'Terror', 'Ficção cientifica', 'Aventura',
                                            'Novela', 'Fantasia'] else 'Nulo'
@@ -103,5 +109,4 @@ def consulta(categoria, lancamento, origem):
             if origem == 'internacional':
                 return 'Game of Thrones'
 
-
-print(consulta('Aventura', int('2011'), 'nacional'))
+print(consulta(categoria, lancamento, origem))
